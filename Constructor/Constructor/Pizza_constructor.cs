@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace constructors_hm1
 {
-    class Pizza_constructor
+    public class Pizza_constructor
     {
         private string name;
         private int size;
