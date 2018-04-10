@@ -21,8 +21,9 @@ namespace constructors_hm1
             Calculate Ref = new Calculate();
             Ref.IncreaceRefType(r);
 
+            int y = 5;
             Calculate val = new Calculate();
-            val.IncreaceValueType(5);
+            val.IncreaceValueType(y);
 
             Console.ReadLine();
         }
