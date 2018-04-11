@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace constructors_hm1
+namespace Constructor
 {
-    public class Pizza_constructor
+    public class PizzaConstructor
     {
         private string name;
         private int size;
@@ -10,7 +10,7 @@ namespace constructors_hm1
         private bool souce;
         private string cheese;
 
-        public Pizza_constructor (string name, int size, string duff, bool souce, string cheese)
+        public PizzaConstructor (string name, int size, string duff, bool souce, string cheese)
         {
             this.name = name;
             this.size = size;
@@ -19,7 +19,7 @@ namespace constructors_hm1
             this.cheese = cheese;  
         }
 
-        public Pizza_constructor(string name, int size)
+        public PizzaConstructor(string name, int size)
         {
             this.name = name;
             this.size = size;
@@ -28,7 +28,7 @@ namespace constructors_hm1
             cheese = "feta";
         }
 
-        public Pizza_constructor()
+        public PizzaConstructor()
         {
             name = "NEAPOLITANA";
             size = 15;

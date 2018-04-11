@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace constructors_hm1
+namespace Constructor
 
 {
     class Program
@@ -8,22 +8,25 @@ namespace constructors_hm1
         static void Main(string[] args)
         {
             Console.WriteLine("1st homework 'Constructors'");
-            Pizza_constructor margarita = new Pizza_constructor("MARGARITA",25, "thin", true, "mozarella");
-            Pizza_constructor italiano = new Pizza_constructor("ITALIANO",10);
-            Pizza_constructor neapolitana = new Pizza_constructor();
+            PizzaConstructor margarita = new PizzaConstructor("MARGARITA",25, "thin", true, "mozarella");
+            PizzaConstructor italiano = new PizzaConstructor("ITALIANO",10);
+            PizzaConstructor neapolitana = new PizzaConstructor();
             margarita.PrintResult();
             italiano.PrintResult();
             neapolitana.PrintResult();
 
             Console.WriteLine("***************************************");
             Console.WriteLine("2nd homework 'Value and reference type'");
+
             Value r = new Value();
             Calculate Ref = new Calculate();
             Ref.IncreaceRefType(r);
+            Ref.PrintRef(r);
 
             int y = 5;
             Calculate val = new Calculate();
             val.IncreaceValueType(y);
+            val.PrintVal(y);
 
             Console.ReadLine();
         }
