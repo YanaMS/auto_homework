@@ -11,9 +11,20 @@ namespace Constructor
         private bool souce;
         private string cheese;
 
+        public int SetCount(int x)
+        {
+            Count = x;
+            return Count;
+        }
+
+        public void GetCount()
+        {
+            Console.WriteLine(Count);
+        }
+
         static PizzaConstructor()
         {
-            Console.WriteLine("Pizza Constructor");
+            Console.WriteLine("Pizza Static Constructor");
         }
         public PizzaConstructor (string name, int size, string duff, bool souce, string cheese)
         {
@@ -42,7 +53,6 @@ namespace Constructor
         }
         public void PrintResult()
         {
-            Console.WriteLine(Count);
             Console.WriteLine(name);
             Console.WriteLine(size);
             Console.WriteLine(duff);
