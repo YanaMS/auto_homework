@@ -16,12 +16,10 @@ namespace Constructor
             Count = x;
             return Count;
         }
-
         public void GetCount()
         {
             Console.WriteLine(Count);
         }
-
         static PizzaConstructor()
         {
             Console.WriteLine("Pizza Static Constructor");
